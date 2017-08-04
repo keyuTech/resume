@@ -1,0 +1,36 @@
+body,header,main,footer,p,h1,h2,a,img,ul,li {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	text-align: center;
+	font-family: Arial,'microsoft yahei'
+	font-size: 12px;
+	line-height: 3;
+}
+body {
+	background-color: rgb(255,242,227);
+}
+header h1 {
+	color: rgb(135,150,142);
+}
+header p {
+	color: rgb(183,187,176);
+}
+a {
+	text-decoration: none;
+}
+.links a,.bottom a {
+	background-color: rgb(114,184,144);
+	color: #fff;
+	padding: 10px 15px;
+	border-radius: 3px;
+	display: inline-block;
+	line-height: 1;
+}
+.links,.bottom {
+	margin: 30px;
+}
+footer a {
+	color: rgb(114,184,144);
+}
