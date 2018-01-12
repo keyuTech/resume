@@ -3,3 +3,30 @@
   display: block;
   clear: both;
 }
+body {
+  background-color: rgb(129, 129, 129);
+}
+header nav {
+  float: right;
+  list-style: none;
+}
+header > nav > ul > li {
+  float: left;
+  margin: 6px 15px 0 15px;
+}
+header > nav ul li > a {
+  font-size: 13px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.7);
+  border-bottom: 3px solid transparent;
+  padding-bottom: 7px;
+}
+header ul li a:hover {
+  border-bottom: 3px solid #e8676b;
+}
+header .logo {
+  float: left;
+  font-family: 'Fredoka One';
+  font-size: 30px;
+}
+
