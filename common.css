@@ -3,10 +3,11 @@ html, body {
   color: #fff;
   font-size: 14px;
 }
-h1, h2, h3, h4, h5, h6, a, dl, dd, dt, ul, li, div, nav {
+html, body, h1, h2, h3, h4, h5, h6, a, dl, dd, dt, ul, li, div, nav {
   font-family: 'Open Sans','Avenir', Arial, sans-serif,'Times New Roman';
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 a {
   text-decoration: none;
