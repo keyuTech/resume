@@ -1,5 +1,5 @@
 body {
-  background-color: rgba(44, 51, 64, 0.8);
+  background-color: #efefef;
 }
 .topNavBar {
   width: 100%;
@@ -50,4 +50,59 @@ header .banner {
 header .banner .mask {
   height: 515px;
   background-color: rgba(44, 51, 64, 0.8);
+}
+main .card {
+  max-width: 940px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+main .card .content {
+  padding: 57px 50px 15px 50px;
+}
+main .card .portrait {
+  float: left;
+  margin-right: 65px;
+}
+main .card .peronalInfo {
+  float: left;
+}
+main .card .portrait img {
+  width: 300px;
+  height: 340px;
+}
+main .card .personalInfo .welcome {
+  background-color: #e8676b;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 5px 12px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+main .card .personalInfo .triangle {
+  display: block;
+  border: 8px solid transparent;
+  width: 0;
+  height: 0;
+  border-top-width: 0;
+  border-left-color: #e8676b;
+  margin-left: 5px;
+  position: absolute;
+  left: 5px;
+  top: 100%;
+}
+main .card .personalInfo h1 {
+  font-size: 34px;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+main .card .personalInfo>p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.1;
+  margin: 0;
+}
+main .card .personalInfo dl {
+  font-size: 12px;
 }
