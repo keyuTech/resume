@@ -1,24 +1,23 @@
-.clearfix::after {
-  content: '';
-  display: block;
-  clear: both;
-}
 body {
   background-color: rgba(44, 51, 64, 0.8);
 }
-header {
+.topNavBar {
+  width: 100%;
   padding: 24px 14px;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 header nav {
   float: right;
   list-style: none;
 }
-header > nav > ul > li {
+header nav ul li {
   float: left;
   margin: 0 15px;
   padding: 9px 0 10px 0;
 }
-header > nav ul li > a {
+header nav ul li > a {
   font-size: 13px;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.7);
@@ -41,4 +40,14 @@ header .logo .myName {
 }
 header .logo .wordCard {
   color: rgb(154, 157, 162);
+}
+header .banner {
+  height: 515px;
+  background-image: url('./img/rs-cover.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+header .banner .mask {
+  height: 515px;
+  background-color: rgba(44, 51, 64, 0.8);
 }
