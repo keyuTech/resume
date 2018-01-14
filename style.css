@@ -51,6 +51,7 @@ header .banner .mask {
   height: 515px;
   background-color: rgba(44, 51, 64, 0.8);
 }
+
 main .card {
   max-width: 940px;
   background-color: #fff;
@@ -63,8 +64,9 @@ main .card .portrait {
   float: left;
   margin-right: 65px;
 }
-main .card .peronalInfo {
+main .card .personalInfo {
   float: left;
+  width: 470px;
 }
 main .card .portrait img {
   width: 300px;
@@ -103,6 +105,29 @@ main .card .personalInfo>p {
   line-height: 1.1;
   margin: 0;
 }
+main .card .personalInfo hr {
+  margin: 20px 0;
+}
 main .card .personalInfo dl {
   font-size: 12px;
+}
+main .card .personalInfo dl>dt,
+main .card .personalInfo dl>dd {
+  float: left;
+  height: 35px;
+  padding: 5px 0;
+}
+main .card .personalInfo dl>dt {
+  float: left;
+  width: 25%;
+  font-weight: 700;
+}
+main .card .personalInfo dl>dd {
+  float: right;
+  width: 75%;
+  font-size: 15px;
+  color: #9da0a7;
+}
+main .card .mediaLink {
+  background-color: #e6686a;
 }

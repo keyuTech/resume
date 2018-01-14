@@ -15,6 +15,11 @@ a {
 ul {
   list-style: none;
 }
+hr {
+  height: 0;
+  border: none;
+  border-top: 1px solid #dedede;
+}
 @font-face {
   font-family: 'Fredoka One';
   src: url('./fonts/FredokaOne-Regular.ttf');
