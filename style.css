@@ -130,4 +130,20 @@ main .card .personalInfo dl>dd {
 }
 main .card .mediaLink {
   background-color: #e6686a;
+  text-align: center;
+  padding: 15px 0;
+}
+main .card .mediaLink a {
+  width: 45px;
+  line-height: 25px;
+  margin: 5px 20px;
+  padding: 10px 0;
+  border-radius: 50%;
+  display: inline-block;
+}
+main .card .mediaLink a:hover {
+  background-color: #da4b5c;
+}
+main .card .mediaLink .icon {
+  vertical-align: top;
 }

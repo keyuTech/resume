@@ -29,3 +29,8 @@ hr {
   display: block;
   clear: both;
 }
+.icon {
+  width: 25px;
+  height: 25px;
+  fill: #fff;
+}
