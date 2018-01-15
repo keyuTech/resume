@@ -52,10 +52,14 @@ header .banner .mask {
   background-color: rgba(44, 51, 64, 0.8);
 }
 
-main .card {
+main {
   max-width: 940px;
-  background-color: #fff;
   margin: 0 auto;
+}
+main .card {
+  background-color: #fff;
+  margin-top: -340px;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
 }
 main .card .content {
   padding: 57px 50px 15px 50px;
@@ -146,4 +150,27 @@ main .card .mediaLink a:hover {
 }
 main .card .mediaLink .icon {
   vertical-align: top;
+}
+main .pdfResume .downloadWrapper {
+  text-align: center;
+  margin-top: 50px;
+}
+main .pdfResume .downloadWrapper .download {
+  font-size: 16px;
+  color: #494d5b;
+  font-weight: 700;
+  line-height: 18px;
+  padding: 18px 55px;
+  border: 1px solid rgb(203, 205, 207);
+  border-radius: 3px;
+  transition: box-shadow 0.5s;
+}
+main .pdfResume .downloadWrapper .download:hover {
+  box-shadow: 0 4px 13px 0 rgba(0, 0, 0, 0.2);
+}
+main .pdfResume .introduction {
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.8;
+  margin-top: 50px;
 }
