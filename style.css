@@ -1,6 +1,3 @@
-body {
-  background-color: #efefef;
-}
 .topNavBar {
   width: 100%;
   padding: 24px 14px;
@@ -8,16 +5,19 @@ body {
   top: 0;
   left: 0;
 }
+
 header nav {
   float: right;
   list-style: none;
 }
+
 header nav ul li {
   float: left;
   margin: 0 15px;
   padding: 9px 0 10px 0;
 }
-header nav ul li > a {
+
+header nav ul li>a {
   font-size: 13px;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.7);
@@ -25,28 +25,34 @@ header nav ul li > a {
   border-bottom: 3px solid transparent;
   padding-bottom: 7px;
 }
+
 header ul li a:hover {
   border-bottom: 3px solid #e8676b;
 }
+
 header .logo {
   float: left;
   font-family: 'Fredoka One';
   font-size: 30px;
   padding: 1px 0;
 }
+
 header .logo .myName {
   color: rgb(232, 103, 107);
   margin-right: 5px;
 }
+
 header .logo .wordCard {
   color: rgb(154, 157, 162);
 }
+
 header .banner {
   height: 515px;
   background-image: url('./img/rs-cover.jpg');
   background-position: center center;
   background-size: cover;
 }
+
 header .banner .mask {
   height: 515px;
   background-color: rgba(44, 51, 64, 0.8);
@@ -56,26 +62,32 @@ main {
   max-width: 940px;
   margin: 0 auto;
 }
+
 main .card {
   background-color: #fff;
   margin-top: -340px;
   box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
 }
+
 main .card .content {
   padding: 57px 50px 15px 50px;
 }
+
 main .card .portrait {
   float: left;
   margin-right: 65px;
 }
+
 main .card .personalInfo {
   float: left;
   width: 470px;
 }
+
 main .card .portrait img {
   width: 300px;
   height: 340px;
 }
+
 main .card .personalInfo .welcome {
   background-color: #e8676b;
   color: #fff;
@@ -86,6 +98,7 @@ main .card .personalInfo .welcome {
   display: inline-block;
   margin-bottom: 15px;
 }
+
 main .card .personalInfo .triangle {
   display: block;
   border: 8px solid transparent;
@@ -98,45 +111,55 @@ main .card .personalInfo .triangle {
   left: 5px;
   top: 100%;
 }
+
 main .card .personalInfo h1 {
   font-size: 34px;
   line-height: 1.2;
   margin: 10px 0;
 }
+
 main .card .personalInfo>p {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.1;
   margin: 0;
 }
+
 main .card .personalInfo hr {
   margin: 20px 0;
 }
+
 main .card .personalInfo dl {
   font-size: 12px;
 }
+
 main .card .personalInfo dl>dt,
 main .card .personalInfo dl>dd {
   float: left;
   height: 35px;
+  line-height: 35px;
   padding: 5px 0;
 }
+
 main .card .personalInfo dl>dt {
   float: left;
   width: 25%;
   font-weight: 700;
 }
+
 main .card .personalInfo dl>dd {
   float: right;
   width: 75%;
   font-size: 15px;
   color: #9da0a7;
 }
+
 main .card .mediaLink {
   background-color: #e6686a;
   text-align: center;
   padding: 15px 0;
 }
+
 main .card .mediaLink a {
   width: 45px;
   line-height: 25px;
@@ -145,16 +168,20 @@ main .card .mediaLink a {
   border-radius: 50%;
   display: inline-block;
 }
+
 main .card .mediaLink a:hover {
   background-color: #da4b5c;
 }
+
 main .card .mediaLink .icon {
   vertical-align: top;
 }
+
 main .pdfResume .downloadWrapper {
   text-align: center;
   margin-top: 50px;
 }
+
 main .pdfResume .downloadWrapper .download {
   font-size: 16px;
   color: #494d5b;
@@ -165,12 +192,54 @@ main .pdfResume .downloadWrapper .download {
   border-radius: 3px;
   transition: box-shadow 0.5s;
 }
+
 main .pdfResume .downloadWrapper .download:hover {
   box-shadow: 0 4px 13px 0 rgba(0, 0, 0, 0.2);
 }
+
 main .pdfResume .introduction {
   text-align: center;
   font-size: 20px;
+  font-weight: lighter;
   line-height: 1.8;
   margin-top: 50px;
+}
+
+main .skills ul {
+  background-color: #fff;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  padding: 50px 50px 10px 50px;
+}
+
+main .skills ul li {
+  width: 50%;
+  float: left;
+  margin-bottom: 40px;
+}
+
+main .skills h2 {
+  text-align: center;
+  margin-top: 70px;
+  font-size: 34px;
+  font-weight: normal;
+  color: #3d4451;
+  margin-bottom: 25px;
+}
+
+main .skills h3 {
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+main .skills .progressBar {
+  width: 92%;
+  height: 5px;
+  border-radius: 3px;
+  background: #fcdce0;
+}
+main .skills .progress {
+  width: 80%;
+  height: 100%;
+  border-radius: 3px;
+  background: #f35367;
 }
