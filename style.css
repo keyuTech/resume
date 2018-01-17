@@ -275,19 +275,89 @@ main .skills .nodeSkill .progress {
   width: 50%;
 }
 
+main .portfolio {
+  text-align: center;
+}
+
 main .portfolio h2 {
   margin-top: 70px;
   margin-bottom: 25px;
 }
+
 main .portfolio ul {
   display: inline-block;
   vertical-align: top;
 }
+
 main .portfolio nav {
   text-align: center;
+  display: inline-block;
+  vertical-align: top;
 }
+
 main .portfolio ul li {
   float: left;
   margin: 0 25px;
   font-size: 16px;
+  cursor: pointer;
+}
+
+main .portfolio ul li:first-child {
+  margin-left: 0;
+}
+
+main .portfolio ul li:last-child {
+  margin-right: 0;
+}
+
+main .portfolio nav .footBar {
+  height: 6px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-top: 8px;
+  margin-bottom: 30px;
+}
+
+main .portfolio .footBar .barItems {
+  height: 100%;
+  background-color: #f35367;
+  border-radius: 5px;
+  width: 20%;
+  margin-left: 30px;
+  transition: all 0.5s;
+}
+
+main .portfolio .footBar.state-1 .barItems {
+  margin-left: 0;
+  width: 40px;
+}
+
+main .portfolio .footBar.state-2 .barItems {
+  margin-left: 70px;
+  width: 60px;
+}
+
+main .portfolio .footBar.state-3 .barItems {
+  margin-left: 154px;
+  width: 102px;
+}
+
+main .portfolio .allWorks {
+  margin-top: 5px;
+}
+
+main .portfolio .allWorks .works {
+  float: left;
+  padding: 0 9px;
+  position: relative;
+}
+
+main .portfolio .allWorks .works::before {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0px;
+  right: 10px;
+  bottom: 8px;
+  left: 10px;
+  position: absolute;
 }
