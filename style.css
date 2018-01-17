@@ -381,6 +381,25 @@ footer .foot {
   vertical-align: top;
   line-height: 2.6;
 }
-footer .foot a {
+/* footer .foot a {
   margin: 5px 35px;
+} */
+footer .foot a {
+  width: 45px;
+  line-height: 25px;
+  margin: 5px 20px;
+  padding: 10px 0;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+}
+
+footer .foot a:hover {
+  background-color: #d6d6d7;
+}
+footer .foot a:hover .icon {
+  fill: #6e6e6e;
+}
+footer .foot .icon {
+  vertical-align: top;
 }
