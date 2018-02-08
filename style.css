@@ -6,6 +6,7 @@
   left: 0;
   transition: all 0.5s;
 }
+
 .topNavBar.sticky {
   background-color: #fff;
   padding-top: 10px;
@@ -15,21 +16,24 @@
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
   z-index: 2;
 }
+
 .topNavBar.sticky>nav ul li>a {
   color: #3d4451;
 }
-header nav {
+
+.topNavBar nav {
   float: right;
   list-style: none;
 }
 
-header nav ul li {
+.topNavBar nav>ul>li {
   float: left;
   margin: 0 15px;
   padding: 9px 0 10px 0;
+  position: relative;
 }
 
-header nav ul li>a {
+.topNavBar nav>ul>li>a {
   font-size: 13px;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.7);
@@ -38,23 +42,68 @@ header nav ul li>a {
   padding-bottom: 7px;
 }
 
-header ul li a:hover {
-  border-bottom: 3px solid #e8676b;
+.topNavBar nav li .submenu {
+  position: absolute;
+  display: none;
+  top: 100%;
+  right: 0;
+  text-align: right;
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  padding: 10px 0;
+}
+.topNavBar nav li .submenu > li {
+  color: #3c4451;
+  font-size: 14px;
+  padding: 10px 30px;
+  white-space: nowrap;
+  cursor: pointer;
 }
 
-header .logo {
+.topNavBar nav .portfolioMenu:hover .submenu{
+  display: block;
+}
+.topNavBar nav .submenu li:hover {
+  background-color: #fafafa;
+}
+.topNavBar nav .submenu li:hover a {
+  color: #f5919d;
+}
+.topNavBar nav>ul>li>a:hover::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 90%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #f35367;
+  animation: barSlide 0.5s;
+}
+
+@keyframes barSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.topNavBar .logo {
   float: left;
   font-family: 'Fredoka One';
   font-size: 30px;
   padding: 5px 0;
 }
 
-header .logo .myName {
+.topNavBar .logo .myName {
   color: rgb(232, 103, 107);
   margin-right: 5px;
 }
 
-header .logo .wordCard {
+.topNavBar .logo .wordCard {
   color: rgb(154, 157, 162);
 }
 
@@ -374,28 +423,33 @@ main .portfolio .allWorks .works::before {
   left: 10px;
   position: absolute;
 }
+
 main .calendar {
   margin-top: 62px;
   border: 1px solid red;
 }
+
 main .blog {
   margin-top: 70px;
   border: 1px solid red;
 }
 
-
 footer {
   margin: 30px 0;
   text-align: center;
 }
+
 footer .foot {
   display: inline-block;
   vertical-align: top;
   line-height: 2.6;
 }
+
+
 /* footer .foot a {
   margin: 5px 35px;
 } */
+
 footer .foot a {
   width: 45px;
   line-height: 25px;
@@ -409,9 +463,11 @@ footer .foot a {
 footer .foot a:hover {
   background-color: #d6d6d7;
 }
+
 footer .foot a:hover .icon {
   fill: #6e6e6e;
 }
+
 footer .foot .icon {
   vertical-align: top;
 }
