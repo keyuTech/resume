@@ -17,3 +17,10 @@ window.onscroll = function(){
     topNavBar.classList.remove('sticky')
   }
 }
+let aTags = document.querySelectorAll('nav > .menu > li > a')
+console.log(aTags)
+for(let i = 0; i < aTags.length; i++){
+  aTags[i].onclick = function(e){
+    console.log(e.currentTarget)
+  }
+}

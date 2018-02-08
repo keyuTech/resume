@@ -6,7 +6,6 @@
   left: 0;
   transition: all 0.5s;
 }
-
 .topNavBar.sticky {
   background-color: #fff;
   padding-top: 10px;
@@ -43,6 +42,7 @@
 }
 
 .topNavBar nav li .submenu {
+  color: #3c4451;
   position: absolute;
   display: none;
   top: 100%;
@@ -53,15 +53,25 @@
   padding: 10px 0;
 }
 .topNavBar nav li .submenu > li {
-  color: #3c4451;
   font-size: 14px;
   padding: 10px 30px;
   white-space: nowrap;
   cursor: pointer;
 }
-
+.topNavBar nav li .submenu > li a {
+  color: #3c4451;
+}
 .topNavBar nav .portfolioMenu:hover .submenu{
   display: block;
+  animation: menuSlide 0.5s;
+}
+@keyframes menuSlide {
+  0% {
+    margin-right: 100%;
+  }
+  100% {
+    margin-right: 0%;
+  }
 }
 .topNavBar nav .submenu li:hover {
   background-color: #fafafa;
@@ -73,7 +83,7 @@
   content: '';
   display: block;
   position: absolute;
-  top: 90%;
+  top: 92%;
   left: 0;
   width: 100%;
   height: 3px;
