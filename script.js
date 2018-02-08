@@ -18,9 +18,12 @@ window.onscroll = function(){
   }
 }
 let aTags = document.querySelectorAll('nav > .menu > li > a')
-console.log(aTags)
 for(let i = 0; i < aTags.length; i++){
   aTags[i].onclick = function(e){
-    console.log(e.currentTarget)
+    e.preventDefault()  
+    let href = e.currentTarget.getAttribute('href')
+    let targetElement = document.querySelector(href)
+    let top = targetElement.offsetTop
+    window.scrollTo(0, top - 80)
   }
 }
