@@ -1,3 +1,6 @@
+setTimeout(() => {
+  siteWelcome.classList.remove('active') 
+}, 1000)
 portfolioAll.onclick = function(){
   portfolioBar.className = 'footBar state-1'
 }
@@ -6,4 +9,11 @@ portfolioFrame.onclick = function(){
 }
 portfolioJs.onclick = function(){
   portfolioBar.className = 'footBar state-3'
+}
+window.onscroll = function(){
+  if(window.scrollY > 20){
+    topNavBar.classList.add('sticky')
+  }else{
+    topNavBar.classList.remove('sticky')
+  }
 }
