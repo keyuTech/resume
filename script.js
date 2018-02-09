@@ -18,26 +18,32 @@ window.onscroll = function(){
   }
 }
 let aTags = document.querySelectorAll('nav > .menu > li > a')
+
+function animate(time) {
+  requestAnimationFrame(animate)
+  TWEEN.update(time)
+}
+requestAnimationFrame(animate)
+
 for(let i = 0; i < aTags.length; i++){
   aTags[i].onclick = function(e){
     e.preventDefault()  
     let href = e.currentTarget.getAttribute('href')
     let targetElement = document.querySelector(href)
     let top = targetElement.offsetTop
-    // window.scrollTo(0, top - 80)
-    let count = 30
-    let duration = 400 / count
+
     let currentTop = window.scrollY
     let targetTop = top - 80
-    let distance = (targetTop - currentTop) / count
-    let i = 0
-    var clock = setInterval(()=>{
-      if(i === count) {
-        window.clearInterval(clock)
-        return
-      }
-      i+=1
-      window.scrollTo(0, currentTop + distance * i)
-    }, duration)
+
+    // Setup the animation loop.
+
+    var coords = { y: currentTop }
+    var tween = new TWEEN.Tween(coords)
+      .to({ y: targetTop }, 1000)
+      .easing(TWEEN.Easing.Quadratic.InOut)
+      .onUpdate(function() {
+        window.scrollTo(0, coords.y)
+      })
+      .start()
   }
 }
