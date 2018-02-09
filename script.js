@@ -69,7 +69,7 @@ for(let i = 0; i < aTags.length; i++){
     let top = targetElement.offsetTop
 
     let currentTop = window.scrollY
-    let targetTop = top - 80
+    let targetTop = top - 280
 
     // Setup the animation loop.
 

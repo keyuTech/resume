@@ -452,10 +452,17 @@ main .calendar {
   margin-top: 62px;
   border: 1px solid red;
 }
+main .calendar .calendarDetail {
+  height: 600px;
+}
 
 main .blog {
   margin-top: 70px;
   border: 1px solid red;
+}
+
+main .blog .blogContent {
+  height: 600px;
 }
 
 footer {
