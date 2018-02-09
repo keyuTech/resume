@@ -61,7 +61,7 @@
 .topNavBar nav li .submenu > li a {
   color: #3c4451;
 }
-.topNavBar nav .portfolioMenu:hover .submenu{
+.topNavBar nav .portfolioMenu.active .submenu{
   display: block;
   animation: menuSlide 0.5s;
 }
@@ -79,7 +79,8 @@
 .topNavBar nav .submenu li:hover a {
   color: #f5919d;
 }
-.topNavBar nav>ul>li>a:hover::after {
+.topNavBar nav>ul>li.active::after,
+.topNavBar nav>ul>li.highlight::after {
   content: '';
   display: block;
   position: absolute;
@@ -115,6 +116,13 @@
 
 .topNavBar .logo .wordCard {
   color: rgb(154, 157, 162);
+}
+[data-choosed].offset {
+  transform: translateY(100px);
+}
+[data-choosed] {
+  transform: translateY(0);
+  transition: all 0.5s;
 }
 
 header .banner {
@@ -313,6 +321,7 @@ main .skills .progressBar {
   height: 5px;
   border-radius: 3px;
   background: #fcdce0;
+  overflow: hidden;
 }
 
 main .skills .progress {
@@ -320,6 +329,11 @@ main .skills .progress {
   height: 100%;
   border-radius: 3px;
   background: #f35367;
+  transform: translateX(0);
+  transition: all 1s;
+}
+main .skills.offset .progress {
+  transform: translateX(-100%)
 }
 
 main .skills .htmlSkill .progress {

@@ -14,10 +14,10 @@
   bottom: 0;
   right: 0;
   margin: auto;
-  animation: loading 2s linear infinite;
+  animation: loading 3s linear infinite;
 }
 .round2 {
-  animation-delay: 1s;
+  animation-delay: 1.5s;
 }
 @keyframes loading {
   0% {
