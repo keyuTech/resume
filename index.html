@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./common.css">
-  <link rel="stylesheet" href="./loading.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/loading.css">
+  <link rel="stylesheet" href="./swiper-4.1.6.min.css">
   <script src="https://cdn.bootcss.com/tween.js/r14/Tween.js"></script>
   <title>王克宇的个人简历</title>
 </head>
@@ -24,22 +25,22 @@
             <a href="#portfolio">PORTFOLIO</a>
             <ul class="submenu">
               <li>
-                <a href="https://wky0615.github.io/web-music/index.html">Music Website</a>
+                <a href="https://wky0615.github.io/web-music/index.html" target="_blank">Music Website</a>
               </li>
               <li>
-                <a href="https://github.com/wky0615/doubanmovie">Douban Movie</a>
+                <a href="https://github.com/wky0615/doubanmovie" target="_blank">Douban Movie</a>
               </li>
               <li>
-                <a href="https://github.com/wky0615/NetEaseMusic">NetEaseMusic</a>
+                <a href="https://github.com/wky0615/NetEaseMusic" target="_blank">NetEaseMusic</a>
               </li>
               <li>
-                <a href="https://wky0615.github.io/pikachuAnimate/index.html">Pikachu</a>
+                <a href="https://wky0615.github.io/pikachuAnimate/index.html" target="_blank">Pikachu</a>
               </li>
               <li>
-                <a href="https://wky0615.github.io/startPage/index.html">StartPage</a>
+                <a href="https://wky0615.github.io/startPage/index.html" target="_blank">StartPage</a>
               </li>
               <li>
-                  <a href="https://github.com/wky0615/Sketchpad">Sketchpad</a>
+                <a href="https://github.com/wky0615/Sketchpad" target="_blank">Sketchpad</a>
                 </li>
             </ul>
           </li>
@@ -156,37 +157,103 @@
     </section>
     <section class="portfolio" id="portfolio" data-choosed>
       <h2>作品集</h2>
-      <nav>
-        <ul>
-          <li id="portfolioAll">所有</li>
-          <li id="portfolioFrame">框架</li>
-          <li id="portfolioJs">原生JS &amp; CSS</li>
-        </ul>
-        <div class="footBar state-1" id="portfolioBar">
-          <div class="barItems"></div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/pic/webMusic.jpg" alt="音乐网站">
+              <div class="worksLink">
+                <a href="https://wky0615.github.io/web-music/index.html" target="_blank">
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-view"></use>
+                  </svg>
+                </a>
+                <a href="https://github.com/wky0615/web-music" target="_blank">
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-link"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/pic/startPage.jpg" alt="导航页">
+              <div class="worksLink">
+                <a href="https://wky0615.github.io/startPage/index.html" target="_blank">
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-view"></use>
+                  </svg>
+                </a>
+                <a href="https://github.com/wky0615/startPage" target="_blank">
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-link"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/pic/NetEaseMusic.jpg" alt="网易云音乐">
+              <div class="worksLink">
+                <a href="https://wky0615.github.io/NetEaseMusic/index.html" target="_blank">
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-view"></use>
+                  </svg>
+                </a>
+                <a href="https://github.com/wky0615/NetEaseMusic" target="_blank">
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-link"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/pic/doubanMovie.jpg" alt="豆瓣电影">
+              <div class="worksLink">
+                <a href="https://wky0615.github.io/doubanmovie/index.html" target="_blank">
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-view"></use>
+                  </svg>
+                </a>
+                <a href="https://github.com/wky0615/doubanmovie" target="_blank">
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-link"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/pic/pikachu.jpg" alt="画一只皮卡丘给你看">
+              <div class="worksLink">
+                <a href="https://wky0615.github.io/pikachuAnimate/index.html" target="_blank">
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-view"></use>
+                  </svg>
+                </a>
+                <a href="https://github.com/wky0615/pikachuAnimate" target="_blank">
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-link"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/pic/sketchpad.jpg" alt="画板">
+              <div class="worksLink">
+                <a href="https://wky0615.github.io/Sketchpad/index.html" target="_blank">
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-view"></use>
+                  </svg>
+                </a>
+                <a href="https://github.com/wky0615/Sketchpad" target="_blank">
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-link"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
         </div>
-      </nav>
-      <div class="allWorks">
-        <div class="works">
-          <img src="./img/camera-keys-1-294x278.jpg" alt="">
-        </div>
-        <div class="works">
-          <img src="./img/photo-1420136663600-498c31ee1c97-1-294x278.jpg" alt="">
-        </div>
-        <div class="works">
-          <img src="./img/photo-1431068799455-80bae0caf685-1-294x278.jpg" alt="">
-        </div>
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button swiper-button-prev"></div>
+        <div class="swiper-button swiper-button-next"></div>
       </div>
-      <!-- <div class="frameWorks">
-        <div class="works"></div>
-        <div class="works"></div>
-        <div class="works"></div>
-      </div>
-      <div class="jsWorks">
-        <div class="works"></div>
-        <div class="works"></div>
-        <div class="works"></div>
-      </div> -->
     </section>
     <section class="calendar" id="calendar" data-choosed>
       <h2>日历</h2>
@@ -221,7 +288,19 @@
       </a>
     </div>
   </footer>
-  <script src="//at.alicdn.com/t/font_541452_d8kwi7cgxs84zpvi.js"></script>
+  <script src="//at.alicdn.com/t/font_541452_527ml734fbja714i.js"></script>
   <script src="./script.js"></script>
+  <script src="./swiper-4.1.6.min.js"></script>
+
+  <script>        
+    var mySwiper = new Swiper ('.swiper-container', {
+      loop: true,
+      // 如果需要前进后退按钮
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    })        
+    </script>
 </body>
 </html>

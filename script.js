@@ -1,15 +1,7 @@
+//加载动画
 setTimeout(() => {
   siteWelcome.classList.remove('active') 
 }, 3000)
-portfolioAll.onclick = function(){
-  portfolioBar.className = 'footBar state-1'
-}
-portfolioFrame.onclick = function(){
-  portfolioBar.className = 'footBar state-2'
-}
-portfolioJs.onclick = function(){
-  portfolioBar.className = 'footBar state-3'
-}
 setTimeout(() => {
   setSection()
 }, 3100)
@@ -21,7 +13,7 @@ for(let i = 0; i < specialTags.length; i++){
 }
 
 window.onscroll = function(){
-  if(window.scrollY > 20){
+  if(window.scrollY > 0){
     topNavBar.classList.add('sticky')
   }else{
     topNavBar.classList.remove('sticky')
@@ -53,8 +45,9 @@ function setSection(){
   li.classList.add('highlight')
 }
 
-let aTags = document.querySelectorAll('nav > .menu > li > a')
+let aTags = document.querySelectorAll('.topNavBar > nav > .menu > li > a')
 
+//引入Tweenjs
 function animate(time) {
   requestAnimationFrame(animate)
   TWEEN.update(time)
@@ -84,8 +77,7 @@ for(let i = 0; i < aTags.length; i++){
   }
 }
 
-let liTags = document.querySelectorAll('nav > ul > li')
-console.log(liTags)
+let liTags = document.querySelectorAll('.topNavBar > nav > ul > li')
 for(let i = 0; i < liTags.length; i++){
   liTags[i].onmouseenter = function(e){
     e.currentTarget.classList.add('active')
@@ -94,3 +86,16 @@ for(let i = 0; i < liTags.length; i++){
     e.currentTarget.classList.remove('active')
   }
 }
+
+// function showLinks(){
+//   let imgs = document.querySelector('.swiper-slide img')
+//   let links = document.querySelector('.swiper-slide .worksLink')
+//   imgs.on('mouseenter', function(){
+//     links.classList.add('show')
+//   })
+//   imgs.on('mouseleave', function(){
+//     links.classList.remove('show')
+//   })
+//   console.log(1)
+// }
+// showLinks()
