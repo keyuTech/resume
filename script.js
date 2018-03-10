@@ -1,11 +1,12 @@
 //加载动画
-setTimeout(() => {
-  siteWelcome.classList.remove('active') 
-}, 3000)
-setTimeout(() => {
-  setSection()
-}, 3100)
-
+// setTimeout(() => {
+//   siteWelcome.classList.remove('active') 
+// }, 3000)
+// setTimeout(() => {
+//   setSection()
+// }, 3100)
+siteWelcome.classList.remove('active')
+setSection()
 
 let specialTags = document.querySelectorAll('[data-choosed]')
 for(let i = 0; i < specialTags.length; i++){
@@ -86,16 +87,3 @@ for(let i = 0; i < liTags.length; i++){
     e.currentTarget.classList.remove('active')
   }
 }
-
-// function showLinks(){
-//   let imgs = document.querySelector('.swiper-slide img')
-//   let links = document.querySelector('.swiper-slide .worksLink')
-//   imgs.on('mouseenter', function(){
-//     links.classList.add('show')
-//   })
-//   imgs.on('mouseleave', function(){
-//     links.classList.remove('show')
-//   })
-//   console.log(1)
-// }
-// showLinks()

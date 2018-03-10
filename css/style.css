@@ -444,8 +444,83 @@ main .calendar {
 }
 
 main .calendar .calendarDetail {
-  height: 600px;
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
 }
+main .calendar .todaySide {
+  background-color: #31323f;
+  justify-content: center;
+  padding-bottom: 94px;
+}
+main .calendar .todaySide .todayOfDate {
+  background-color: #e8676b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 76px 44px 76px;
+  padding: 20px 42px;
+  border-radius: 7px;
+  position: relative;
+}
+main .calendar .todaySide .todayOfDate::before {
+  position: absolute;
+  content: '';
+  width: 3px;
+  height: 12px;
+  left: 30%;
+  top: -6px;
+  border-radius: 38%;
+  background-color: #fff;
+}
+main .calendar .todaySide .todayOfDate::after {
+  position: absolute;
+  content: '';
+  width: 3px;
+  height: 12px;
+  right: 30%;
+  top: -6px;
+  border-radius: 38%;
+  background-color: #fff;
+}
+main .calendar .todayOfDate .todayDate {
+  font-size: 74px;
+  color: #fff;
+}
+main .calendar .todayOfDate .todayMonth {
+  font-size: 33px;
+  color: #fff;
+  letter-spacing: 0.2em;
+}
+main .calendar .todayWeek {
+  font-size: 36px;
+  color: #fff;
+  letter-spacing: 0.08em;
+  margin: 0 76px;
+}
+main .calendar .allDatesSide {
+  padding: 35px;
+}
+main .calendar .allDatesSide .monthAndYear {
+  display: flex;
+  align-items: center;
+}
+main .calendar .allDatesSide .monthAndYear p {
+  margin: 0 36px;
+  font-size: 14px;
+  font-weight: 600;
+}
+main .calendar .allDatesSide .icon {
+  fill: #d6d6d6;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+
+
 
 main .blog {
   margin-top: 70px;
