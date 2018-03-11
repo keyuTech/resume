@@ -501,15 +501,18 @@ main .calendar .todayWeek {
   margin: 0 76px;
 }
 main .calendar .allDatesSide {
+  width: 100%;
   padding: 35px;
+  position: relative;
 }
 main .calendar .allDatesSide .monthAndYear {
   display: flex;
   align-items: center;
+  margin-bottom: 25px;
 }
 main .calendar .allDatesSide .monthAndYear p {
   margin: 0 36px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
 }
 main .calendar .allDatesSide .icon {
@@ -518,7 +521,46 @@ main .calendar .allDatesSide .icon {
   height: 16px;
   cursor: pointer;
 }
-
+main .calendar .weeksList li {
+  font-size: 14px;
+  color: #757575;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 13px 5px;
+}
+main .calendar .bodyList ul li {
+  width: calc(100% / 7);
+  text-align: center;
+  vertical-align: middle;
+  float: left;
+}
+main .calendar .days.bodyList li {
+  height: 46px;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 0;
+}
+main .calendar .allDatesSide .wishYou {
+  border-top: 1px solid #e1e1e1;
+  font-size: 12px;
+  line-height: 1.25;
+  padding: 18px 0 18px 35px;
+  position: absolute;
+  bottom: 0;
+  width: 82%;
+  margin: 0 25px;
+}
+main .calendar .allDatesSide .wishYou::before {
+  display: block;
+  content: '';
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 10px;
+  top: 18px;
+  background-color: #cacaca;
+  border-radius: 3px;
+}
 
 
 
