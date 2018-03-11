@@ -87,3 +87,65 @@ for(let i = 0; i < liTags.length; i++){
     e.currentTarget.classList.remove('active')
   }
 }
+
+
+//日历
+let month_leap = [31,29,31,30,31,30,31,31,30,31,30,31]
+let month_normal = [31,28,31,30,31,30,31,31,30,31,30,31]
+let month = ["January","Febrary","March","April","May","June","July","Auguest","September","October","November","December"]
+let monthAbbr = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
+let weeks = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Firday","Saturday"]
+
+let today_date = document.querySelector('.todayDate')
+let today_month = document.querySelector('.todayMonth')
+let today_week = document.querySelector('.todayWeek')
+let prevButton = document.querySelector('#prev')
+let nextButton = document.querySelector('#next')
+let title_month = document.querySelector('.monthAndYear .titleMonth')
+let title_year = document.querySelector('.monthAndYear .titleYear')
+let days = document.querySelector('.calendar .daysList')
+
+let dateNow = new Date()
+let dateYear = dateNow.getFullYear()
+let dateMonth = dateNow.getMonth()
+let dateWeek = dateNow.getDay()
+let dateDay = dateNow.getDate()
+
+function dateStart(year, month){
+  let tmpDate = new Date(year, month, 1)
+  return tmpDate.getDay()
+}
+function isLeapYear(year, month){
+  if(year % 4 === 0){
+    return month_leap[month]
+  }else{
+    return month_normal[month]
+  }
+}
+
+function createDate(){
+  let tmpStr = ''
+  let tmpTotal = isLeapYear(dateYear, dateMonth)
+  console.log(tmpTotal)
+  let tmpStart = dateStart(dateYear, dateMonth)
+  console.log(tmpStart)
+  let className = ''
+  for(let i = 1; i < tmpStart+1; i++){
+    tmpStr += '<li><span></span></li>'
+  }
+  for(let i = 1; i < tmpTotal+1; i++){
+    if(i === dateDay && dateYear === dateNow.getFullYear() && dateMonth === dateNow.getMonth()){
+      className = "class='active'"
+    }
+    tmpStr += '<li><span ' + className + '>' + i + '</span></li>'
+    className = ''
+  }
+  days.innerHTML = tmpStr
+  today_date.innerText = dateDay
+  today_month.innerText = monthAbbr[dateMonth]
+  today_week.innerText = weeks[dateWeek]
+  title_month.innerText = month[dateMonth]
+  title_year.innerText = dateYear
+}
+
+createDate()

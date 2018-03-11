@@ -440,7 +440,6 @@ main .portfolio .icon {
 
 main .calendar {
   margin-top: 102px;
-  border: 1px solid red;
 }
 
 main .calendar .calendarDetail {
@@ -448,6 +447,7 @@ main .calendar .calendarDetail {
   display: flex;
   justify-content: flex-start;
   box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  margin-top: 16px;
 }
 main .calendar .todaySide {
   background-color: #31323f;
@@ -513,7 +513,11 @@ main .calendar .allDatesSide .monthAndYear {
 main .calendar .allDatesSide .monthAndYear p {
   margin: 0 36px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 550;
+  text-transform: uppercase;
+}
+main .calendar .allDatesSide .monthAndYear p span:nth-child(1) {
+  margin-right: 5px;
 }
 main .calendar .allDatesSide .icon {
   fill: #d6d6d6;
@@ -539,6 +543,19 @@ main .calendar .days.bodyList li {
   font-size: 16px;
   font-weight: 400;
   padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .calendar .days.bodyList li span {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 3px;
+}
+main .calendar .days.bodyList li span.active {
+  background-color: #e8676b;
+  color: #fff;  
 }
 main .calendar .allDatesSide .wishYou {
   border-top: 1px solid #e1e1e1;
@@ -561,6 +578,11 @@ main .calendar .allDatesSide .wishYou::before {
   background-color: #cacaca;
   border-radius: 3px;
 }
+
+
+
+
+
 
 
 
