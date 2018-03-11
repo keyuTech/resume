@@ -99,8 +99,7 @@ let weeks = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Firday","Saturd
 let today_date = document.querySelector('.todayDate')
 let today_month = document.querySelector('.todayMonth')
 let today_week = document.querySelector('.todayWeek')
-let prevButton = document.querySelector('#prev')
-let nextButton = document.querySelector('#next')
+
 let title_month = document.querySelector('.monthAndYear .titleMonth')
 let title_year = document.querySelector('.monthAndYear .titleYear')
 let days = document.querySelector('.calendar .daysList')
@@ -124,11 +123,15 @@ function isLeapYear(year, month){
 }
 
 function createDate(){
+  createDays()
+  today_date.innerText = dateDay
+  today_month.innerText = monthAbbr[dateMonth]
+  today_week.innerText = weeks[dateWeek]
+}
+function createDays(){
   let tmpStr = ''
   let tmpTotal = isLeapYear(dateYear, dateMonth)
-  console.log(tmpTotal)
   let tmpStart = dateStart(dateYear, dateMonth)
-  console.log(tmpStart)
   let className = ''
   for(let i = 1; i < tmpStart+1; i++){
     tmpStr += '<li><span></span></li>'
@@ -141,11 +144,28 @@ function createDate(){
     className = ''
   }
   days.innerHTML = tmpStr
-  today_date.innerText = dateDay
-  today_month.innerText = monthAbbr[dateMonth]
-  today_week.innerText = weeks[dateWeek]
   title_month.innerText = month[dateMonth]
   title_year.innerText = dateYear
 }
 
 createDate()
+
+prev.onclick = function(e){
+  console.log(1)
+  e.preventDefault()
+  dateMonth--
+  if(dateMonth < 0){
+    dateYear --
+    dateMonth = 11
+  }
+  createDays()
+}
+next.onclick = function(e){
+  e.preventDefault()
+  dateMonth++
+  if(dateMonth > 11){
+    dateYear ++
+    dateMonth = 0
+  }
+  createDays()
+}
