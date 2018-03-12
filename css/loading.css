@@ -1,4 +1,4 @@
-/* .loading {
+.loading {
   width: 100px;
   height: 100px;
   position: relative;
@@ -30,4 +30,4 @@
     height: 80px;
     opacity: 0;
   }
-} */
+}

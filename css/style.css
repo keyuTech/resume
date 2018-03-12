@@ -348,11 +348,11 @@ main .skills.offset .progress {
 }
 
 main .skills .htmlSkill .progress {
-  width: 70%;
+  width: 75%;
 }
 
 main .skills .jsSkill .progress {
-  width: 60%;
+  width: 70%;
 }
 
 main .skills .jqSkill .progress {
@@ -363,12 +363,12 @@ main .skills .vueSkill .progress {
   width: 20%;
 }
 
-main .skills .reactSkill .progress {
-  width: 0%;
+main .skills .httpSkill .progress {
+  width: 30%;
 }
 
 main .skills .nodeSkill .progress {
-  width: 50%;
+  width: 30%;
 }
 
 main .portfolio {
@@ -688,13 +688,13 @@ main .blog .blogContent.lineLeft .dot {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: calc(-10% + 2px);
+  right: -42px;
 }
 main .blog .blogContent.lineRight .dot {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: calc(-10% + 2px);
+  left: -41px;
 }
 
 

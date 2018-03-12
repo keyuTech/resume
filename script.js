@@ -1,12 +1,11 @@
 //加载动画
-// setTimeout(() => {
-//   siteWelcome.classList.remove('active') 
-// }, 3000)
-// setTimeout(() => {
-//   setSection()
-// }, 3100)
-siteWelcome.classList.remove('active')
-setSection()
+setTimeout(() => {
+  siteWelcome.classList.remove('active') 
+}, 3000)
+setTimeout(() => {
+  siteWelcome.classList.remove('active')
+  setSection()
+}, 3100)
 
 let specialTags = document.querySelectorAll('[data-choosed]')
 for(let i = 0; i < specialTags.length; i++){
