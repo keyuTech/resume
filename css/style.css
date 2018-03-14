@@ -588,7 +588,7 @@ main .blog .blogContainer {
 }
 main .blog .timerLine {
   width: 4px;
-  height: 450px;
+  height: 500px;
   background-color: rgba(232, 103, 107, 0.2);
   position: absolute;
   left: 50%;
@@ -705,7 +705,7 @@ main .blog .blogContent.lineRight .dot {
 
 
 footer {
-  margin: 30px 0;
+  margin: 100px 0 30px 0;
   text-align: center;
 }
 
