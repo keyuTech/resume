@@ -1,0 +1,21 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "预览地址：http://wangkeyu.com/",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wky0615/resume.git"
+  },
+  "author": "wky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wky0615/resume/issues"
+  },
+  "homepage": "https://github.com/wky0615/resume#readme",
+  "dependencies": {},
+  "devDependencies": {}
+}

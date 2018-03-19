@@ -52,6 +52,7 @@
   background-color: #fff;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
   padding: 10px 0;
+  z-index: 10;
 }
 
 .topNavBar nav li .submenu>li {
@@ -373,11 +374,11 @@ main .skills .nodeSkill .progress {
 
 main .portfolio {
   text-align: center;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
+  padding-top: 70px;
 }
 
 main .portfolio h2 {
-  margin-top: 70px;
   margin-bottom: 25px;
 }
 
@@ -445,10 +446,10 @@ main .portfolio .icon {
 }
 
 main .calendar {
-  margin-top: 102px;
+  padding-top: 102px;
 }
 
-main .calendar .calendarDetail {
+main .calendar .calendarContainer {
   background-color: #fff;
   display: flex;
   justify-content: flex-start;
@@ -586,7 +587,7 @@ main .calendar .allDatesSide .wishYou::before {
 }
 
 main .blog {
-  margin-top: 70px;
+  padding-top: 70px;
   position: relative;
 }
 main .blog .blogContainer {
@@ -596,6 +597,7 @@ main .blog .timerLine {
   width: 4px;
   height: 500px;
   background-color: rgba(232, 103, 107, 0.2);
+  border-radius: 2px;
   position: absolute;
   left: 50%;
   top: 60px;
@@ -703,15 +705,74 @@ main .blog .blogContent.lineRight .dot {
   left: -41px;
 }
 
+main .message {
+  max-width: 800px;
+  padding: 100px 0 0 0;
+  margin: 0 auto;
+}
+main .message .messageContainer {
+  background-color: #fff;
+  padding-bottom: 30px;
+  margin-top: 30px;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+}
+main .message ul {
+  border-top: 1px solid #ddd;
+  margin: 20px auto;
+  padding: 0;
+}
+main .message ul li {
+  font-size: 20px;
+  padding: 16px 50px;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+main .message ul li .userName {
+  color: #000;
+}
+main .message ul li .messageWords {
+  color: #6e6e6e;
+}
+main .message ul li .char {
+  display: inline-block;
+  margin-right: 30px;
+}
+main .message form {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+main .message input[type="text"] {
+  padding: 10px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+main .message input[name="messageWords"] {
+  width: 35%;
+}
+main .message input[type="submit"] {
+  padding: 7px 15px;
+  margin: 0 25px;
+  border-radius: 5px;
+}
 
-
-
-
+main .message ul li .square {
+  display: block;
+  content: '';
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -7px;
+  background-color: #cacaca;
+  border-radius: 3px;
+}
 
 
 
 footer {
-  margin: 100px 0 30px 0;
+  margin: 30px 0 30px 0;
   text-align: center;
 }
 

@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/loading.css">
   <link rel="stylesheet" href="./css/swiper-4.1.6.min.css">
-  <script src="https://cdn.bootcss.com/tween.js/r14/Tween.js"></script>
   <title>王克宇的个人简历</title>
 </head>
 <body>
@@ -41,12 +40,11 @@
               </li>
               <li>
                 <a href="https://github.com/wky0615/Sketchpad" target="_blank">Sketchpad</a>
-                </li>
+              </li>
             </ul>
-          </li>
           <li><a href="#calendar">CALENDAR</a></li>
           <li><a href="#blog">BLOG</a></li>
-          <li><a href="#other">OTHER</a></li>
+          <li><a href="#message">MESSAGE</a></li>
         </ul>
       </nav>
     </div>
@@ -157,8 +155,9 @@
     </section>
     <section class="portfolio" id="portfolio" data-choosed>
       <h2>作品集</h2>
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
+      <div id="carousel">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img src="./img/pic/webMusic.jpg" alt="音乐网站">
               <div class="worksLink">
@@ -255,15 +254,17 @@
                 </a>
               </div>
             </div>
+          </div>
+          <!-- 如果需要导航按钮 -->
+          <div class="swiper-button swiper-button-prev"></div>
+          <div class="swiper-button swiper-button-next"></div>
         </div>
-        <!-- 如果需要导航按钮 -->
-        <div class="swiper-button swiper-button-prev"></div>
-        <div class="swiper-button swiper-button-next"></div>
       </div>
+
     </section>
     <section class="calendar" id="calendar" data-choosed>
       <h2>日历</h2>
-      <div class="calendarDetail clearfix">
+      <div class="calendarContainer clearfix">
         <div class="todaySide">
           <div class="todayOfDate">
             <span class="todayDate"></span>
@@ -311,7 +312,7 @@
         </div>
       </div>
     </section>
-    <section class="blog" id="blog" data-choosed>
+    <section class="blog clearfix" id="blog" data-choosed>
       <h2>博客</h2>
       <div class="blogContainer clearfix">
         <div class="timerLine"></div>
@@ -353,6 +354,19 @@
         </div>
       </div>
     </section>
+    <section class="message" id="message" data-choosed>
+      <h2>留言</h2>
+      <div class="messageContainer">
+        <ul class="messageList">
+
+        </ul>
+        <form id="messageContent">
+          <input type="text" name="userName" placeholder="姓名或昵称">
+          <input type="text" name="messageWords" placeholder="留下你想说的话吧">
+          <input type="submit" value="提交">
+        </form>
+      </div>
+    </section>
   </main>
   <footer>
     <div class="foot">
@@ -379,17 +393,17 @@
     </div>
   </footer>
   <script src="//at.alicdn.com/t/font_541452_menko4dq8k1hh0k9.js"></script>
-  <script src="./script.js"></script>
-  <script src="./swiper-4.1.6.min.js"></script>
-
-  <script>        
-    var mySwiper = new Swiper ('.swiper-container', {
-      loop: true,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      }
-    })        
-    </script>
+  <script src="https://cdn.bootcss.com/tween.js/r14/Tween.js"></script>
+  <script src="//cdn1.lncld.net/static/js/3.6.0/av-min.js"></script>
+  <script src="./js/swiper-4.1.6.min.js"></script>
+  <!-- 模块化 -->
+  <script src="./js/script.js"></script>
+  <script src="./js/loading.js"></script>
+  <script src="./js/carousel.js"></script>
+  <script src="./js/navbar-heightlight.js"></script>
+  <script src="./js/auto-slide-up.js"></script>
+  <script src="./js/auto-skip.js"></script>
+  <script src="./js/calendar.js"></script>
+  <script src="./js/message.js"></script>
 </body>
 </html>
