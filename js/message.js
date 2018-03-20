@@ -74,24 +74,27 @@
       let myForm = this.form
       let content = myForm.querySelector('input[name=messageWords]').value
       let userName = myForm.querySelector('input[name=userName]').value
-      this.model.save(userName, content).then((object) => {
-        let li = document.createElement('li')
-        li.innerHTML = `
-          <div class="square"></div>
-          <span class="userName">${userName}</span>
-          <span class="char">:</span>
-          <span class="messageWords">${content}</span>
-        `
-        let messageList = this.view.querySelector('.messageList')
-        console.log(messageList)
-        messageList.appendChild(li)
-        myForm.querySelector('input[name=messageWords]').value = ''
-      })
+      if(content === '' || userName === ''){
+        alert('姓名或留言内容不能为空')
+      }else{
+        this.model.save(userName, content).then((object) => {
+          let li = document.createElement('li')
+          li.innerHTML = `
+            <div class="square"></div>
+            <span class="userName">${userName}</span>
+            <span class="char">:</span>
+            <span class="messageWords">${content}</span>
+          `
+          let messageList = this.view.querySelector('.messageList')
+          console.log(messageList)
+          messageList.appendChild(li)
+          myForm.querySelector('input[name=messageWords]').value = ''
+        })
+      }
     }
-
   }
 
-  controller.init(view, model)
+  controller.init.call(controller, view, model)
 
 
 }.call()
