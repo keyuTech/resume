@@ -1,0 +1,33 @@
+.loading {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+.round1, .round2{
+  width: 0;
+  height: 0;
+  background-color: #000;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  animation: loading 3s linear infinite;
+}
+.round2 {
+  animation-delay: 1.5s;
+}
+@keyframes loading {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0.6;
+  }
+  100% {
+    width: 80px;
+    height: 80px;
+    opacity: 0;
+  }
+}
