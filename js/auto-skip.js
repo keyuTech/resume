@@ -21,7 +21,7 @@
     },
     addAnimate: function(){
       let currentTop = window.scrollY
-      let targetTop = this.top - 280
+      let targetTop = this.top - 10
 
       //引入Tweenjs
       function animate(time) {

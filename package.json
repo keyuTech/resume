@@ -16,6 +16,8 @@
     "url": "https://github.com/wky0615/resume/issues"
   },
   "homepage": "https://github.com/wky0615/resume#readme",
-  "dependencies": {},
+  "dependencies": {
+    "webpack": "^4.20.2"
+  },
   "devDependencies": {}
 }

@@ -69,6 +69,7 @@
 .topNavBar nav .portfolioMenu.active .submenu {
   display: block;
   animation: menuSlide 0.5s;
+  z-index: 10;
 }
 
 @keyframes menuSlide {
