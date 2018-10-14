@@ -158,6 +158,7 @@ main .card {
   background-color: #fff;
   margin-top: -340px;
   box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 main .card .content {
