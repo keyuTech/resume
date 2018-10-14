@@ -366,12 +366,23 @@ main .skills .vueSkill .progress {
   width: 20%;
 }
 
-main .skills .httpSkill .progress {
-  width: 30%;
+main .skills .angularSkill .progress {
+  width: 50%;
 }
 
-main .skills .nodeSkill .progress {
-  width: 30%;
+main .skills .xcxSkill .progress {
+  width: 50%;
+}
+
+main .expirence {
+  text-align: center;
+  padding-top: 70px;
+}
+
+main .expirence .item .icon {
+  width: 30px;
+  height: 30px;
+  fill: #e6686a;
 }
 
 main .portfolio {
