@@ -374,28 +374,52 @@ main .skills .xcxSkill .progress {
   width: 50%;
 }
 
+main .expirence {
+  padding-top: 70px;
+}
+
 main .expirence-items {
   background-color: #fff;
   box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
-  padding: 70px 50px 10px 50px;
+  padding: 30px 50px 10px 50px;
+  margin: 0 auto;
+  margin-top: 20px;
   font-size: 16px;
 }
 
 main .expirence .item {
-  margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+
+main .expirence .item .usedSkills {
+  margin-top: 10px;
+}
+
+main .expirence .item h4 {
+  margin-bottom: 10px;
 }
 
 main .expirence .item .role .icon {
   width: 20px;
   height: 20px;
   fill: #e6686a;
+  /* margin-top: 8px; */
 }
 
-main .expirence .intreoduce .icon {
+main .expirence .introduce .icon {
   width: 20px;
   height: 20px;
   fill: #e6686a;
+  position: absolute;
+}
+
+main .expirence .introduce .intro-item {
+  margin-top: 10px;
+}
+
+main .expirence .introduce p,
+main .expirence .introduce ol {
+  margin-left: 25px;
 }
 
 main .portfolio {
