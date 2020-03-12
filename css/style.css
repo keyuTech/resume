@@ -128,13 +128,15 @@
   color: rgb(154, 157, 162);
 }
 
-[data-choosed].offset {
-  transform: translateY(100px);
-}
+@media screen and (min-width: 480px) {
+    [data-choosed].offset {
+      transform: translateY(100px);
+    }
 
-[data-choosed] {
-  transform: translateY(0);
-  transition: all 0.5s;
+    [data-choosed] {
+      transform: translateY(0);
+      transition: all 0.5s;
+    }
 }
 
 header .banner {
@@ -246,6 +248,12 @@ main .card .personalInfo dl>dd {
   color: #9da0a7;
 }
 
+main .card .personalInfo dl>dd>a {
+    font-size: 15px;
+    color: #9da0a7;
+    text-decoration: underline;
+}
+
 main .card .mediaLink {
   background-color: #e6686a;
   text-align: center;
@@ -346,32 +354,34 @@ main .skills .progress {
   transition: all 1s;
 }
 
-main .skills.offset .progress {
-  transform: translateX(-100%)
-}
+@media screen and (min-width: 480px) {
+    main .skills.offset .progress {
+      transform: translateX(-100%)
+    }
 
-main .skills .htmlSkill .progress {
-  width: 75%;
-}
+    main .skills .htmlSkill .progress {
+      width: 75%;
+    }
 
-main .skills .jsSkill .progress {
-  width: 70%;
-}
+    main .skills .jsSkill .progress {
+      width: 70%;
+    }
 
-main .skills .jqSkill .progress {
-  width: 60%;
-}
+    main .skills .jqSkill .progress {
+      width: 60%;
+    }
 
-main .skills .vueSkill .progress {
-  width: 20%;
-}
+    main .skills .vueSkill .progress {
+      width: 20%;
+    }
 
-main .skills .angularSkill .progress {
-  width: 50%;
-}
+    main .skills .angularSkill .progress {
+      width: 50%;
+    }
 
-main .skills .xcxSkill .progress {
-  width: 50%;
+    main .skills .xcxSkill .progress {
+      width: 50%;
+    }
 }
 
 main .expirence {
@@ -385,6 +395,21 @@ main .expirence-items {
   margin: 0 auto;
   margin-top: 20px;
   font-size: 16px;
+}
+
+main .expirence-items .company {
+    margin: 20px 0 12px 0;
+    font-size: 18px;
+}
+
+main .expirence-items .workDescription {
+    opacity: .6;
+    margin-bottom: 18px;
+}
+
+main .expirence-items .item .link {
+    color: #000000;
+    text-decoration: underline;
 }
 
 main .expirence .item {
@@ -420,6 +445,35 @@ main .expirence .introduce .intro-item {
 main .expirence .introduce p,
 main .expirence .introduce ol {
   margin-left: 25px;
+}
+
+main .openSource {
+    padding-top: 70px;
+}
+
+main .openSource .description {
+    background-color: #ffffff;
+    padding: 30px 50px;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+main .openSource .description .link {
+    color: #3d4451;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    display: block;
+}
+
+main .openSource .description .detail {
+    color: #3d4451;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+main .openSource .description .detailLink {
+    color: #3d4451;
+    text-decoration: underline;
 }
 
 main .portfolio {
@@ -612,7 +666,7 @@ main .calendar .days.bodyList li span {
 }
 main .calendar .days.bodyList li span.active {
   background-color: #e8676b;
-  color: #fff;  
+  color: #fff;
 }
 main .calendar .allDatesSide .wishYou {
   border-top: 1px solid #e1e1e1;

@@ -1,0 +1,88 @@
+@media screen and (max-width: 480px) {
+    .topNavBar nav {
+        display: none;
+    }
+
+    main {
+        width: 100%;
+    }
+    main .card .content {
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+    }
+    main .card .content .portrait {
+        margin: 0 auto;
+    }
+    main .card .content .personalInfo {
+        margin: 0 auto;
+        width: 300px;
+    }
+    main .pdfResume .introduction {
+        margin: 50px auto;
+        width: 300px;
+        text-align: left;
+    }
+    main .skills h2 {
+        margin-top: 0;
+    }
+    main .skills ul li {
+        width: 100%;
+    }
+    main .skills ul li:nth-child(odd) {
+        float: none;
+        padding-right: 0;
+    }
+
+    main .skills ul li:nth-child(even) {
+        float: none;
+        padding-left: 0;
+    }
+    main .skills .htmlSkill .progress {
+        width: 75%;
+    }
+
+    main .skills .jsSkill .progress {
+        width: 70%;
+    }
+
+    main .skills .jqSkill .progress {
+        width: 60%;
+    }
+
+    main .skills .vueSkill .progress {
+        width: 20%;
+    }
+
+    main .skills .angularSkill .progress {
+        width: 50%;
+    }
+
+    main .skills .xcxSkill .progress {
+        width: 50%;
+    }
+    main .expirence-items .company {
+
+    }
+    main .expirence .item h4 {
+        font-size: 18px;
+    }
+    main .expirence .item .role {
+        opacity: .6;
+    }
+    main .expirence .item .role .icon {
+        display: none;
+    }
+    main .expirence .item .usedSkills {
+        opacity: .6;
+        margin: 20px 0;
+    }
+    main .expirence .introduce p, main .expirence .introduce ol {
+        margin-left: 0;
+        opacity: .6;
+    }
+
+    main .calendar, main .blog, main .message{
+        display: none;
+    }
+}
