@@ -367,7 +367,7 @@ main .skills .progress {
       width: 70%;
     }
 
-    main .skills .jqSkill .progress {
+    main .skills .reactSkill .progress {
       width: 60%;
     }
 
@@ -375,12 +375,12 @@ main .skills .progress {
       width: 20%;
     }
 
-    main .skills .angularSkill .progress {
+    main .skills .tsSkill .progress {
       width: 50%;
     }
 
-    main .skills .xcxSkill .progress {
-      width: 50%;
+    main .skills .nodeSkill .progress {
+      width: 30%;
     }
 }
 
@@ -424,18 +424,12 @@ main .expirence .item h4 {
   margin-bottom: 10px;
 }
 
-main .expirence .item .role .icon {
-  width: 20px;
-  height: 20px;
+main .expirence .item .role .icon,
+main .expirence .introduce .icon{
+  width: 14px;
+  height: 14px;
   fill: #e6686a;
   /* margin-top: 8px; */
-}
-
-main .expirence .introduce .icon {
-  width: 20px;
-  height: 20px;
-  fill: #e6686a;
-  position: absolute;
 }
 
 main .expirence .introduce .intro-item {
