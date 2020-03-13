@@ -470,6 +470,10 @@ main .openSource .description .detailLink {
     text-decoration: underline;
 }
 
+main .openSource img {
+  width: 100%;
+}
+
 main .portfolio {
   text-align: center;
   /* margin-bottom: 40px; */
@@ -509,11 +513,16 @@ main .portfolio .swiper-container {
   position: relative;
 }
 
-main .portfolio .swiper-wrapper:hover .worksLink {
+main .portfolio .swiper-wrapper .worksLink {
   position: absolute;
   top: 20px;
   left: 40px;
   text-align: center;
+  opacity: 0;
+}
+
+main .portfolio .swiper-wrapper:hover .worksLink {
+  opacity: 1;
 }
 
 main .portfolio .worksLink > p {
@@ -900,6 +909,11 @@ footer .foot a:hover .icon {
 
 footer .foot .icon {
   vertical-align: top;
+}
+
+footer .foot p {
+  color: #d6d6d6;
+  font-size: 14px;
 }
 
 .swiper-container {
