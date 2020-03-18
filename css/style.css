@@ -371,7 +371,7 @@ main .skills .progress {
       width: 60%;
     }
 
-    main .skills .vueSkill .progress {
+    main .skills .webpackSkill .progress {
       width: 20%;
     }
 
@@ -405,6 +405,10 @@ main .expirence-items .company {
 main .expirence-items .workDescription {
     opacity: .6;
     margin-bottom: 18px;
+}
+
+main .expirence-items .item .project-link {
+  margin-bottom: 6px;
 }
 
 main .expirence-items .item .link {
