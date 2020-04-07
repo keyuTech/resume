@@ -400,6 +400,14 @@ main .expirence-items {
 main .expirence-items .company {
     margin: 20px 0 12px 0;
     font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+main .expirence-items .company .icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
 }
 
 main .expirence-items .workDescription {
